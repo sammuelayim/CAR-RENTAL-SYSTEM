@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Register">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFD700;">
+         <children>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="132.0" text="REGISTRATION FORM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Circle fill="#1f93ff05" layoutX="100.0" layoutY="142.0" radius="89.0" stroke="#f5f0f0" strokeType="INSIDE" strokeWidth="3.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <Line endX="60.5" layoutX="118.0" layoutY="160.0" startX="-100.0" stroke="#e4e3e3" strokeWidth="3.0" />
+            <ImageView fitHeight="143.0" fitWidth="188.0" layoutX="10.0" layoutY="87.0" opacity="0.23" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\LENOVO\IdeaProjects\demo1\src\main\resources\com\example\demo1\images\R.jpg" />
+               </image>
+               <effect>
+                  <Reflection bottomOpacity="0.6" topOpacity="0.34" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="405.0">
+         <children>
+            <Label layoutX="25.0" layoutY="32.0" text="FIRST NAME" />
+            <Label layoutX="27.0" layoutY="78.0" text="LAST NAME" />
+            <TextField fx:id="txt_firstname" layoutX="105.0" layoutY="28.0" prefHeight="25.0" prefWidth="279.0" promptText="ENTER FIRST NAME" />
+            <TextField fx:id="txt_lastname" layoutX="102.0" layoutY="74.0" prefHeight="25.0" prefWidth="279.0" promptText="ENTER LAST NAME" />
+            <Label layoutX="26.0" layoutY="117.0" text="GENDER" />
+            <RadioButton fx:id="rb_male" layoutX="105.0" layoutY="117.0" mnemonicParsing="false" text="MALE" />
+            <RadioButton fx:id="rb_female" layoutX="225.0" layoutY="117.0" mnemonicParsing="false" text="FEMALE" />
+            <Label layoutX="26.0" layoutY="150.0" text="PHONE NO" />
+            <TextField fx:id="txt_phone" layoutX="102.0" layoutY="146.0" prefHeight="25.0" prefWidth="279.0" promptText="ENTER PHONE NUMBER" />
+            <Label layoutX="26.0" layoutY="183.0" text="USERNAME" />
+            <TextField fx:id="txt_username" layoutX="100.0" layoutY="181.0" prefHeight="25.0" prefWidth="279.0" promptText="ENTER USERNAME" />
+            <Label layoutX="27.0" layoutY="219.0" text="PASSWORD" />
+            <PasswordField fx:id="txt_password" layoutX="102.0" layoutY="215.0" prefHeight="25.0" prefWidth="279.0" promptText="ENTER PASSWORD" />
+            <Button fx:id="btn_register" layoutX="100.0" layoutY="273.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="229.0" text="REGISTER" />
+            <Label layoutX="88.0" layoutY="346.0" text="Already have an account?" />
+            <Button fx:id="btn_login" layoutX="214.0" layoutY="334.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="72.0" style="-fx-background-color: trans;" text="login" textFill="#0273c9" underline="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
